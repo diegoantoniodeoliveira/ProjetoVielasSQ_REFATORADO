@@ -1,0 +1,91 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Login Screen Styles */
+.tela_login {
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #4761B4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Changed 'row-gap' to 'gap' for consistency */
+}
+
+input {
+    background-color: #fff;
+    border: none;
+    width: 300px;
+    padding: 15px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: #fff;
+    font-size: 20px;
+    color: #E5401B;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+label {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.esqueceu_senha {
+    margin-top: 10px;
+}
+
+.esqueceu_senha a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.esqueceu_senha a:hover {
+    color: #cccccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .tela_login {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    input,
+    button {
+        width: 80%;
+    }
+}

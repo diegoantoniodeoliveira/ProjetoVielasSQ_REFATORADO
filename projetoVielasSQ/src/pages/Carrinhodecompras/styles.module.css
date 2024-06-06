@@ -1,0 +1,90 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  /* Estilos da seção de carrinho de compras */
+  .containerCarCompras {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .containerCarCompras .titulo {
+    width: 90%;
+  }
+  
+  .carCompras {
+    padding: 25px 74px 29px 28px;
+    width: 90%;
+    margin-top: 3%;
+    display: flex;
+    border: 1px solid gray;
+    gap: 5px;
+  }
+  
+  .carImagem {
+    width: 70%;
+  }
+  
+  .carImagem img {
+    width: 100%;
+  }
+  
+  .textoMeio {
+    width: 40%;
+    font-size: 1.25rem;
+  }
+  
+  .textoDireita {
+    height: 0;
+    width: 100%;
+  }
+  
+  .textoDireita p {
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+  
+  .textoDireitaInf {
+    margin-top: 20%;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  
+  .textoDireita span {
+    color: orangered;
+    text-decoration: underline;
+  }
+  
+  .textoDireitaInf input {
+    cursor: pointer;
+  }
+  
+  .textoInf {
+    margin-top: 5%;
+    margin-left: 20%;
+    gap: 15px;
+  }
+  
+  .botaoProsseguir {
+    margin-top: 5%;
+  }
+  
+  .botaoProsseguir button {
+    border: none;
+  }
+  
+  .botaoProsseguir h3 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #4761B4;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  

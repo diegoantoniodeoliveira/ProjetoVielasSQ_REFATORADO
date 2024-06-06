@@ -1,0 +1,75 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 1rem;
+    background: #4761B4;
+    color: #fff;
+    width: 100%;
+}
+
+.menuicon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 70px;
+}
+
+.menu {
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 70%;
+    margin-left: 73px;
+}
+
+.textocontainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+    margin-right: 73px;
+}
+
+.login {
+    font-size: 1rem;
+    color: #CCCCCC;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 762px) {
+    nav {
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .textocontainer {
+        justify-content: flex-end;
+        width: 45%;
+        margin-right: 5%;
+    }
+
+    h3 {
+        font-size: 0.6rem;
+    }
+}

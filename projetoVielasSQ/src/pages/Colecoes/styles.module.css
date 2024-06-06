@@ -1,0 +1,58 @@
+/* styles.module.css */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Space Mono', monospace;
+}
+
+.containerResults {
+  margin: 3% 5%;
+  align-items: center;
+}
+
+.containerResults h1 {
+  margin-left: 5%;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  margin: 1% 5%;
+}
+
+.result img {
+  max-width: 40%;
+  height: auto;
+}
+
+.texto2 {
+  font-size: 1.75rem;
+  margin-left: 3%;
+}
+
+.outros {
+  margin-top: 5%;
+}
+
+.outros h1 {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.containerFotosSemelhantes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.cardWrapper {
+  width: calc(33.33% - 20px);
+  margin-bottom: 1%;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
