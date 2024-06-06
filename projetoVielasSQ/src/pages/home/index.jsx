@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './styles.module.css';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Search1 } from '../../components/Search1';
-import styles from './styles.module.css';
+
 
 const Menu = () => (
   <div className={styles.containerMenu}>

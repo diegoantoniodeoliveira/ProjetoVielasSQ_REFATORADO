@@ -1,21 +1,56 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/homeome';
-import {FotoParaCompra} from './pages/Fotoparacompra';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Colecoes from './pages/Colecoes';
+import Fotoparacompra from './pages/Fotoparacompra';
+import Carrinhodecompras from './pages/Carrinhodecompras';
+import Login from './components/Login';
 import Thanks from './components/Thanks';
-import NotFound from './components/NotFound'; // Create a simple NotFound component if you don't have one
 
-const Routes = () => {
+function AppRoutes() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/Fotoparacompra" pages={FotoParaCompra} />
-        <Route path="/Thanks" component={Thanks} />
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/colecoes" element={<Colecoes />} />
+        <Route path="/fotoparacompra" element={<Fotoparacompra />} />
+        <Route path="/carrinhodecompras" element={<Carrinhodecompras />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/thanks" element={<Thanks />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
-export default Routes;
+export default AppRoutes;
+
+
+
+
+
+// // src/routes.jsx
+// import React from 'react';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import {Home} from './pages/Home';
+// import {Colecoes} from './pages/Colecoes';
+// import {FotoParaCompra} from './pages/Fotoparacompra';
+// import {Login} from './components/Login';
+// import {Thanks} from './components/Thanks';
+// import {Carrinhodecompras} from './pages/Carrinhodecompras';
+
+// function AppRoutes() {
+//     return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Home />} >   </Route>
+//         <Route path="/colecoes" element={<Colecoes />}>   </Route>
+//         <Route path="/fotoparacompra" element={<FotoParaCompra />} />
+//         <Route path="/login" element={<Login />} />
+//         <Route path="/thanks" element={<Thanks />} />
+//         <Route path="/carrinhodecompras" element={<Carrinhodecompras />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// };
+
+// export default AppRoutes;
