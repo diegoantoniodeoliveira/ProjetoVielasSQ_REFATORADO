@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-const Search1 = () => {
+export const Search1 = () => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.pesquisa}>

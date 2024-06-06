@@ -6,10 +6,7 @@
 // import Thanks from "./components/Thanks"
 // import AppRoutes from "./routes"
 // import {FotoParaCompra} from "./pages/Fotoparacompra"
-
-import {Colecoes} from "./pages/Colecoes"
-
-
+// import {Colecoes} from "./pages/Colecoes"
 // import CarrinhoDeCompras from "./pages/Carrinhodecompras"
 
 
@@ -21,10 +18,10 @@ function App() {
     // <Footer />
     // <Thanks />
     // <CarrinhoDeCompras />
-
-    <Colecoes />
+    // <Colecoes />
     // <Home />
     // <FotoParaCompra />
+    
     
 
 
