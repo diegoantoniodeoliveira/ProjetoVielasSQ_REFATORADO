@@ -1,4 +1,3 @@
-// components/NotFound.jsx
 import React from 'react';
 
 const NotFound = () => {

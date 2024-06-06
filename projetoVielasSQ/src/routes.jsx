@@ -4,8 +4,13 @@ import Home from './pages/Home';
 import Colecoes from './pages/Colecoes';
 import Fotoparacompra from './pages/Fotoparacompra';
 import Carrinhodecompras from './pages/Carrinhodecompras';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import Login from './components/Login';
+import Search1 from './components/Search1';
 import Thanks from './components/Thanks';
+import NotFound from './components/NotFound';
+
 
 function AppRoutes() {
   return (
@@ -15,8 +20,12 @@ function AppRoutes() {
         <Route path="/colecoes" element={<Colecoes />} />
         <Route path="/fotoparacompra" element={<Fotoparacompra />} />
         <Route path="/carrinhodecompras" element={<Carrinhodecompras />} />
+        <Route path="/footer" element={<Footer />} />
+        <Route path="/header" element={<Header />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/search1" element={<Search1 />} />
         <Route path="/thanks" element={<Thanks />} />
+        <Route path="/notfound" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
