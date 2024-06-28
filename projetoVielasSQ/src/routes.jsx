@@ -10,6 +10,8 @@ import Login from './components/Login';
 import Search1 from './components/Search1';
 import Thanks from './components/Thanks';
 import NotFound from './components/NotFound';
+import Planosdeassinatura from './pages/Planosdeassinatura';
+
 
 
 function AppRoutes() {
@@ -26,6 +28,7 @@ function AppRoutes() {
         <Route path="/search1" element={<Search1 />} />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/notfound" element={<NotFound />} />
+        <Route path="/planosdeassinatura" element={<Planosdeassinatura />} />
       </Routes>
     </BrowserRouter>
   );
