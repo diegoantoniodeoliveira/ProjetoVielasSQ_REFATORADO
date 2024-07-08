@@ -1,235 +1,87 @@
-*
-{  margin: 0;
-   padding: 0;
-   font-family: 'Space Mono', monospace;
-
-}
-
-/* Estrutura básica da página */
-.containerPlanodeAssinatura {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  /* Estrutura básica da página */
+  .containerPlanodeAssinatura {
     text-align: left;
     padding: 2%;
     margin: 2%;
-
-}
-
-.texto h1 {
+  }
+  
+  .texto h1 {
     margin-bottom: 20px;
     color: #333;
     margin-left: 5%;
-}
-
-.cards{
-    border: orangered solid;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 1400px;
-    
-
-}
-
-.cardplano{
-    border: purple solid;
-    width: 300px;
-    margin: 1%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
-   
-}
-
-
-.nomeplano1{
-    width: 400px;
-    height: 60px;
-    padding: 1%;
-    border-radius: 5%;
-    background-color: bisque;
-    display: flex;
-    justify-content: center;
-    
-    
-}
-
-.nomeplano1 h2{
-    margin-top: 3%;
-    text-align: center;
-
-}
-
-
-
-
-
-.detalhes1{
-    height: 550px;
-    margin-top: 20px;
-    padding: 2%;
-    border-radius: 5%;
-    margin-bottom: 1%;
-    background-color: bisque;
-    line-height: 1.5em;
-    display:flex;
-    flex-direction: column;
-    
-    border: orangered solid;
-}
-
-
-.valor1{
-    margin-top: 10%;
-    font-size: larger;
-
-}
-
-
-.detalhes2{
-    height: 600px;
-    display: flex;
-    text-align: justify;
-    line-height: 1.5em;
-    margin: 2%;
-    border: black solid;
-    
-}
-
-.detalhes2 text{
-    display: flex;
-    text-align: justify;
-
-}
-
-.buttoncompra1{
-   text-align: center;
-   padding-bottom: 5%;
-   margin-block: 5%;
-}
-
-
-
-/* Estilos para os tipos de plano */
-.tipoplano {
-    margin-top: 3%;
-    display: flex;
-    
-    border: blue solid;
-   
-        
-}
-
-.gratuito, .mensal10, .mensal30, .personalizado{
-    padding: 5px;
-    margin: 2%;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-   
-}
-
-.nomeplano {
-    background-color: aquamarine;
-    border-radius: 5px;
-    width: 90%;
-    justify-items: center;
-    text-align: center;
-}
-
-
-.nomeplano h2 {
-    margin: 0;
-    color: black;
-}
-
-.nomeplano p{
-    margin: 0;
-    color: black;
-    font-size: 10px;
-
-}
-
-.valorplano{
-    margin-top: 2%;
-    text-align: center;
-
-    
-}
-
-
-.detalhesplano{
-    margin-top: 2%;
-    text-align: left;
-    width: 90%;
-    background-color: burlywood;    
-
-}
-
-.buttoncompra{
-    display: flex;
-    justify-content: center;
-
-}
-
-
-
-
-
-
-/* Estilo específico para os textos e botões */
-
-p {
-    font-size: 0.9em;
-    margin: 5px 0;
-
-}
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .tipoplano {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tipoplano {
-        width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .tipoplano {
-        width: 95%;
-    }
-}
-
-
-@media (max-widht: 1424px){
-    .cards{
-       display: flex;
+  }
   
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .cardplano {
+    flex: 1 0 22%; /* Define a largura dos cards para quatro colunas */
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+  }
+  
+  .nomeplano1 {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nomeplano1 h2 {
+    margin: 0;
+  }
+  
+  .detalhes1 {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .valor1 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+  
+  .detalhes2 {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .buttoncompra1 {
+    margin-top: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1500px) {
+    .cardplano {
+      flex: 1 0 22%; /* Quatro colunas entre 1000px e 1500px */
     }
-
-    .cardplano{
-        flex: 1 0 50%;
-
+  }
+  
+  @media (max-width: 1000px) {
+    .cardplano {
+      flex: 1 0 45%; /* Duas colunas entre 768px e 1000px */
     }
-
-}
-
-/*@media screen and (max-width: 1424px) {
-    .pricing-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .cardplano {
+      flex: 1 0 100%; /* Uma coluna abaixo de 768px */
     }
-
-    .pricing-plan {
-        flex: 0 0 48%;
-        box-sizing: border-box;
-        margin-bottom: 20px; /* Espaço entre as linhas quando quebrar */
-    
-
-/* Estilos gerais para manter o layout antes da quebra */
+  }
+  

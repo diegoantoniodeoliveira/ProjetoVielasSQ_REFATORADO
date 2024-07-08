@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import {Home }from './pages/home';
 import Colecoes from './pages/Colecoes';
 import Fotoparacompra from './pages/Fotoparacompra';
 import Carrinhodecompras from './pages/Carrinhodecompras';
