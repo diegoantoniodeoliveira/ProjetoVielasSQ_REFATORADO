@@ -1,82 +1,235 @@
-.containerPlanodeAssinatura {
-    padding: 10px;
-    margin:5%;
-    margin-left: 10%;
-    margin: auto;
+*
+{  margin: 0;
+   padding: 0;
+   font-family: 'Space Mono', monospace;
+
 }
 
+/* Estrutura básica da página */
+.containerPlanodeAssinatura {
+    text-align: left;
+    padding: 2%;
+    margin: 2%;
+
+}
 
 .texto h1 {
+    margin-bottom: 20px;
+    color: #333;
     margin-left: 5%;
 }
 
-
-.tipoplano {
+.cards{
+    border: orangered solid;
     display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    gap: 1%
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1400px;
+    
+
 }
-  
-.gratuito, .mensal10, .mensal30, .personalizado {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 0px;
-    margin: 10px;
+
+.cardplano{
+    border: purple solid;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+   
+}
+
+
+.nomeplano1{
+    width: 400px;
+    height: 60px;
+    padding: 1%;
+    border-radius: 5%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.nomeplano1 h2{
+    margin-top: 3%;
+    text-align: center;
+
+}
+
+
+
+
+
+.detalhes1{
+    height: 550px;
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 5%;
+    margin-bottom: 1%;
+    background-color: bisque;
+    line-height: 1.5em;
+    display:flex;
+    flex-direction: column;
+    
+    border: orangered solid;
+}
+
+
+.valor1{
+    margin-top: 10%;
+    font-size: larger;
+
+}
+
+
+.detalhes2{
+    height: 600px;
+    display: flex;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 2%;
+    border: black solid;
+    
+}
+
+.detalhes2 text{
+    display: flex;
+    text-align: justify;
+
+}
+
+.buttoncompra1{
+   text-align: center;
+   padding-bottom: 5%;
+   margin-block: 5%;
+}
+
+
+
+/* Estilos para os tipos de plano */
+.tipoplano {
+    margin-top: 3%;
+    display: flex;
+    
+    border: blue solid;
+   
+        
+}
+
+.gratuito, .mensal10, .mensal30, .personalizado{
+    padding: 5px;
+    margin: 2%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+   
 }
-  
-.nomeplano{
-    background: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+
+.nomeplano {
+    background-color: aquamarine;
     border-radius: 5px;
-    margin-top: 20px;
-
-
+    width: 90%;
+    justify-items: center;
+    text-align: center;
 }
+
 
 .nomeplano h2 {
     margin: 0;
-    font-size: 1.5em;
+    color: black;
 }
-  
-.nomeplano h8 {
-    font-size: 0.8em;
-    color: #777;
+
+.nomeplano p{
+    margin: 0;
+    color: black;
+    font-size: 10px;
+
 }
-  
-a {
-    font-size: 1.2em;
-    color: #000;
-    margin: 10px 0;
+
+.valorplano{
+    margin-top: 2%;
+    text-align: center;
+
+    
 }
-  
+
+
+.detalhesplano{
+    margin-top: 2%;
+    text-align: left;
+    width: 90%;
+    background-color: burlywood;    
+
+}
+
+.buttoncompra{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+/* Estilo específico para os textos e botões */
+
 p {
     font-size: 0.9em;
-    color: #333;
-    text-align: center;
     margin: 5px 0;
+
 }
-  
-button {
-    background: #28a745;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tipoplano {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tipoplano {
+        width: 80%;
+    }
 }
-  
-button:hover {
-    background: #218838;
+
+@media (max-width: 480px) {
+    .tipoplano {
+        width: 95%;
+    }
 }
+
+
+@media (max-widht: 1424px){
+    .cards{
+       display: flex;
   
+    }
+
+    .cardplano{
+        flex: 1 0 50%;
+
+    }
+
+}
+
+/*@media screen and (max-width: 1424px) {
+    .pricing-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .pricing-plan {
+        flex: 0 0 48%;
+        box-sizing: border-box;
+        margin-bottom: 20px; /* Espaço entre as linhas quando quebrar */
+    
+
+/* Estilos gerais para manter o layout antes da quebra */
